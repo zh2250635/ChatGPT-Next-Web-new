@@ -77,7 +77,7 @@ export class ChatGPTApi implements LLMApi {
     try {
       const chatPath = this.path(OpenaiPath.ChatPath);
       const chatPayload = {
-        method: "POST",
+        method: "DELETE",
         body: JSON.stringify(requestPayload),
         signal: controller.signal,
         headers: getHeaders(),
